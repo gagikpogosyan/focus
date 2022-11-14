@@ -1,5 +1,5 @@
 :root {
-    --red: #f20044;
+    --red: #ff0000;
 }
 
 
@@ -48,13 +48,13 @@ body {
 
 @keyframes heart {
     0% {
-        transform: rotate(-45deg) scale(1.07) ;
+        transform: rotate(-45deg) scale(0.9) ;
     }
     80% {
-        transform: rotate(-45deg) scale(1.0) ;
+        transform: rotate(-45deg) scale(0.7) ;
     }
     100% {
-        transform: rotate(-45deg) scale(1) ;
+        transform: rotate(-45deg) scale(1.1) 
     }
 }
 
