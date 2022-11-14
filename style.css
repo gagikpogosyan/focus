@@ -1,3 +1,9 @@
+:root {
+    --red: #f20044;
+}
+
+
+
 body {
     margin: 0;
     padding: 0;
@@ -11,10 +17,10 @@ body {
 .heart {
     height: 70px;
     width: 70px;
-    background: #f20044;
+    background: var(--red);
     position: relative;
     transform: rotate(-45deg);
-    box-shadow: -10px 10px 90px #f20044;
+    box-shadow: -10px 10px 90px var(--red);
     animation: heart 0.6s linear infinite;
 
 }
@@ -24,20 +30,20 @@ body {
     position: absolute;
     height: 70px;
     width: 70px;
-    background: #f20044;
+    background: var(--red);
     top: -50%;
     border-radius: 50px;
-    box-shadow: -10px 10px 90px #f20044;
+    box-shadow: -10px 10px 90px var(--red);
 }
 .heart::after {
     content: '';
     position: absolute;
     height: 70px;
     width: 70px;
-    background: #f20044;
+    background: var(--red);
     right: -50%;
     border-radius: 50px;
-    box-shadow: -10px 10px 90px #f20044;
+    box-shadow: -10px 10px 90px var(--red);
 }
 
 @keyframes heart {
@@ -51,3 +57,10 @@ body {
         transform: rotate(-45deg) scale(1) ;
     }
 }
+
+@media(prefers-color-scheme: dark) {
+    :root {
+        --red: #002c8b;
+    }
+}
+
